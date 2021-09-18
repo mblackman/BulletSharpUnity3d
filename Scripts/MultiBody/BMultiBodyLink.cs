@@ -186,12 +186,7 @@ public abstract class BMultiBodyLink : BCollisionObject
         BPhysicsWorld.Get().world.AddCollisionObject(linkCollider, groupsIBelongTo, collisionMask);
         m_collisionObject = linkCollider;
 
-        BulletMultiBodyLinkColliderProxy proxy = gameObject.GetComponent<BulletMultiBodyLinkColliderProxy>();
-        if (proxy == null)
-            proxy = gameObject.AddComponent<BulletMultiBodyLinkColliderProxy>();
-
         mb.MultiBody.GetLink(currentLinkIndex).Collider = linkCollider;
-        proxy.target = linkCollider;
 
         isLinked = true;
 

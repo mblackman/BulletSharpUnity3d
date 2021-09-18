@@ -230,9 +230,6 @@ namespace BulletUnity
                 case PrimitiveMeshOptions.Pyramid:
                     mesh = ProceduralPrimitives.CreateMeshPyramid(settings.height, settings.radius);
                     break;
-                case PrimitiveMeshOptions.Bunny:
-                    mesh = ProceduralPrimitives.BuildMeshFromData(SoftDemo.BunnyMesh.Vertices, SoftDemo.BunnyMesh.Indices);
-                    break;
                 case PrimitiveMeshOptions.Plane:
                     mesh = ProceduralPrimitives.CreateMeshPlane(settings.length, settings.width, settings.resX, settings.resZ);
                     break;

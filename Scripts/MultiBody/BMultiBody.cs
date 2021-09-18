@@ -136,11 +136,6 @@ Can be used to create copies of this BRigidBody for use in other physics simulat
                 mb.BaseCollider = collider;
                 m_collisionObject = collider;
 
-                BulletMultiBodyLinkColliderProxy baseProxy = gameObject.GetComponent<BulletMultiBodyLinkColliderProxy>();
-                if (baseProxy == null)
-                    baseProxy = gameObject.AddComponent<BulletMultiBodyLinkColliderProxy>();
-                baseProxy.target = collider;
-
                 try
                 {
 

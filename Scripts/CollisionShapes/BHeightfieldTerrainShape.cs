@@ -40,8 +40,8 @@ namespace BulletUnity {
                 Debug.LogError("Needs to be attached to a game object with a BTerrainCollisionObject." + name);
             }
             TerrainData td = t.terrainData;
-            int width = td.heightmapWidth;
-            int length = td.heightmapHeight;
+            int width = td.heightmapResolution;
+            int length = td.heightmapResolution;
             float maxHeight = td.size.y;
 
             //generate procedural data
